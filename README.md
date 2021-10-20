@@ -10,6 +10,7 @@ Results as of latest update of code:
 
 *TODO: Train comments against data/integrate ML to make it more accurate since current sentiment analysis is somewhat off on some posts
 
+
 Testing Neural Network Sentiment Analysis
 
 Score:  1
