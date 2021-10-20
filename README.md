@@ -1,135 +1,159 @@
 # Reddit Bot Project 2: Neural Network Boogaloo
-Reddit bot that uses sentiment analysis
+Reddit bot that uses sentiment analysis from NLTK.VADER 
 
 *WIP_WIP_WIP_WIP_WIP_WIP*
 
 Link to test subreddit:
 https://www.reddit.com/r/RBotProject/comments/qbyogh/testing_neural_network_sentiment_analysis/
 
+I learned a lot from this mini-project.
+Although there are many features to impliment, my goal was achieved.
+
 Results as of latest update of code:
 
-*TODO: Train comments against data/integrate ML to make it more accurate since current sentiment analysis is somewhat off on some posts
+Bot in action:
 
+![BiA](https://user-images.githubusercontent.com/92753848/138160873-c6a0ba33-d04e-4c2a-82f0-4c6125863332.PNG)
+
+
+|*This is the name of the subreddit title post*|
 
 Testing Neural Network Sentiment Analysis
 
-Score:  1
+|*Proceeds to reply to every comment with an analysis*|
+
 *******************************
 This subreddit sucks.
 
-sentence was rated as  74.4 % Negative
+sentence was rated as 74.40% Negative
 
-sentence was rated as  25.6 % Neutral
+sentence was rated as 25.60% Neutral
 
-sentence was rated as  0.0 % Positive
+sentence was rated as 0.00% Positive
 
-*******************************
+overall sentence rating conducted by VADER: Negative
 *******************************
 I love this subreddit
 
-sentence was rated as  0.0 % Negative
+sentence was rated as 0.00% Negative
 
-sentence was rated as  19.2 % Neutral
+sentence was rated as 19.20% Neutral
 
-sentence was rated as  80.80000000000001 % Positive
-*******************************
+sentence was rated as 80.80% Positive
+
+overall sentence rating conducted by VADER: Positive
 *******************************
 This SubReddiT is Stoopid
 
-sentence was rated as  0.0 % Negative
+("stoopid" is not recognised in the VADER lexicon as a slang term for stupid/dumb)
 
-sentence was rated as  100.0 % Neutral
+sentence was rated as 0.00% Negative
 
-sentence was rated as  0.0 % Positive
-*******************************
+sentence was rated as 100.00% Neutral
+
+sentence was rated as 0.00% Positive
+
+overall sentence rating conducted by VADER: Negative
 *******************************
 Why is this sub so kwl?
 
-sentence was rated as  0.0 % Negative
+("kwl" is not recognised in the VADER lexicon as a slang term for cool)
 
-sentence was rated as  100.0 % Neutral
+sentence was rated as 0.00% Negative
 
-sentence was rated as  0.0 % Positive
-*******************************
+sentence was rated as 100.00% Neutral
+
+sentence was rated as 0.00% Positive
+
+overall sentence rating conducted by VADER: Negative
 *******************************
 Hello
 
-sentence was rated as  0.0 % Negative
+sentence was rated as 0.00% Negative
 
-sentence was rated as  100.0 % Neutral
+sentence was rated as 100.00% Neutral
 
-sentence was rated as  0.0 % Positive
-*******************************
+sentence was rated as 0.00% Positive
+
+overall sentence rating conducted by VADER: Negative
 *******************************
 Sux
 
-sentence was rated as  100.0 % Negative
+sentence was rated as 100.00% Negative
 
-sentence was rated as  0.0 % Neutral
+sentence was rated as 0.00% Neutral
 
-sentence was rated as  0.0 % Positive
-*******************************
+sentence was rated as 0.00% Positive
+
+overall sentence rating conducted by VADER: Negative
 *******************************
 You are very good at your job- efficient. but you don't seem to really like being here.
 
-sentence was rated as  19.3 % Negative
+sentence was rated as 19.30% Negative
 
-sentence was rated as  33.300000000000004 % Neutral
+sentence was rated as 33.30% Neutral
 
-sentence was rated as  47.4 % Positive
+sentence was rated as 47.40% Positive
 
-*******************************
+overall sentence rating conducted by VADER: Positive
 *******************************
 Sorry, I wasn't listening. Can you say it again?
 
-sentence was rated as  24.5 % Negative
+sentence was rated as 24.50% Negative
 
-sentence was rated as  75.5 % Neutral
+sentence was rated as 75.50% Neutral
 
-sentence was rated as  0.0 % Positive
-*******************************
+sentence was rated as 0.00% Positive
+
+overall sentence rating conducted by VADER: Negative
 *******************************
 I hope your children are born naked and illiterate!
 
-sentence was rated as  0.0 % Negative
+sentence was rated as 0.00% Negative
 
-sentence was rated as  57.99999999999999 % Neutral
+sentence was rated as 58.00% Neutral
 
-sentence was rated as  42.0 % Positive
-*******************************
+sentence was rated as 42.00% Positive
+
+overall sentence rating conducted by VADER: Neutral
 *******************************
 Well done with this test!
 
-sentence was rated as  0.0 % Negative
+sentence was rated as 0.00% Negative
 
-sentence was rated as  48.8 % Neutral
+sentence was rated as 48.80% Neutral
 
-sentence was rated as  51.2 % Positive
-*******************************
+sentence was rated as 51.20% Positive
+
+overall sentence rating conducted by VADER: Neutral
 *******************************
 Proud of you
 
-sentence was rated as  0.0 % Negative
+sentence was rated as 0.00% Negative
 
-sentence was rated as  0.0 % Neutral
+sentence was rated as 0.00% Neutral
 
-sentence was rated as  100.0 % Positive
-*******************************
+sentence was rated as 100.00% Positive
+
+overall sentence rating conducted by VADER: Neutral
 *******************************
 Dogs write better codes than you.
 
-sentence was rated as  0.0 % Negative
+sentence was rated as 0.00% Negative
 
-sentence was rated as  50.8 % Neutral
+sentence was rated as 50.80% Neutral
 
-sentence was rated as  49.2 % Positive
-*******************************
+sentence was rated as 49.20% Positive
+
+overall sentence rating conducted by VADER: Neutral
 *******************************
 The coder is an idiot, I'm super smart.
 
-sentence was rated as  27.700000000000003 % Negative
+sentence was rated as 27.70% Negative
 
-sentence was rated as  16.8 % Neutral
+sentence was rated as 16.80% Neutral
 
-sentence was rated as  55.50000000000001 % Positive
+sentence was rated as 55.50% Positive
+
+overall sentence rating conducted by VADER: Positive
 *******************************
