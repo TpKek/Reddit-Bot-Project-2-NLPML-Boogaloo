@@ -9,6 +9,8 @@ https://www.reddit.com/r/RBotProject/comments/qbyogh/testing_neural_network_sent
 I learned a lot from this mini-project.
 Although there are many features to impliment, my goal was achieved.
 
+NOTE: I realised that the 100% Neutral rated comments came out as overall negative, that is because I made an error with the polRating if-else statement.
+
 Results as of latest update of code:
 
 Bot in action:
