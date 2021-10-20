@@ -83,11 +83,17 @@ for comment in submission.comments:
     leml = [lem.lemmatize(word) for word in word_tokens]
     #print(leml)
     filtered_list = [w for w in leml if not w in unwanted]
-    print(filtered_list)
+    #print(filtered_list)
 
     filtered_sentence = " ".join(filtered_list)
-    print(filtered_sentence)
+    #print(filtered_sentence)
+
     polscore = sia.polarity_scores(filtered_sentence)
-    print(polscore)
+    print("*******************************")
+    print(comment.body)
+    print("sentence was rated as ", polscore['neg']*100, "% Negative")
+    print("sentence was rated as ", polscore['neu']*100, "% Neutral")
+    print("sentence was rated as ", polscore['pos']*100, "% Positive")
+    print("*******************************")
 
     #TODO:Start with a training model to make sentiment more accurate
