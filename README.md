@@ -11,6 +11,7 @@ Results as of latest update of code:
 *TODO: Train comments against data/integrate ML to make it more accurate since current sentiment analysis is somewhat off on some posts
 
 Testing Neural Network Sentiment Analysis
+
 Score:  1
 *******************************
 This subreddit sucks.
@@ -97,6 +98,7 @@ sentence was rated as  42.0 % Positive
 *******************************
 *******************************
 Well done with this test!
+
 sentence was rated as  0.0 % Negative
 
 sentence was rated as  48.8 % Neutral
