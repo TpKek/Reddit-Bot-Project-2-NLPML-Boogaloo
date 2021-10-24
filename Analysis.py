@@ -13,7 +13,7 @@ unwanted = set.union(sw,punct)
 #create a sentiment instance for testing.
 sia = SentimentIntensityAnalyzer()
 #lexicon normalization 
-# #(lemmatization reduces words to their base word, which is linguistically correct lemmas.)
+#(lemmatization reduces words to their base word, which is linguistically correct lemmas.)
 lem = WordNetLemmatizer()
 
 #creating a reddit instance (if you want to read public posts, there is no need to login)
@@ -43,6 +43,7 @@ for comment in submission.comments:
     if isinstance(comment, MoreComments):
         continue
     #tokenize comments (split a sentence into words or "tokens")
+    #used so I can eliminate more "neutral words" later on.
     word_tokens = word_tokenize(comment_lower)
     #lemmatize every word in word token list
     leml = [lem.lemmatize(word) for word in word_tokens]
@@ -56,6 +57,8 @@ for comment in submission.comments:
     polscore = sia.polarity_scores(filtered_sentence)
 
     #init var for later use
+    #NOTE: I made an error here since 100% neutral comments come out as "Overall Negative", but I explained it in my README
+    #won't change since it isn't nessasary.
     polRating = " "
     if polscore["compound"] <= 0:
         polRating = "Negative"
@@ -73,7 +76,8 @@ for comment in submission.comments:
     print("sentence was rated as ", polscore['pos']*100, "% Positive")
     print("*******************************")
 
-    #using this to reply multiple lines in one comment/reply  
+    #using this to reply multiple lines in one comment/reply
+    #weird way of doing it, but PRAW doesn't allow you to reply with mutliple lines in an easier way.
     rep =""
     rep += "sentence was rated as " + '%.2f' %(polscore['neg']*100) + "% Negative.\n\n"
     rep += "sentence was rated as " + '%.2f' %(polscore['neu']*100) + "% Neutral.\n\n"
@@ -83,5 +87,5 @@ for comment in submission.comments:
     #post sentiment of comment as a reply
     comment.reply(rep)
 
-    #NOTE: I Realised I tried doing what VADER already does.
+    #NOTE: I realised I tried doing what VADER already does.
     #NOTE to self: Read the documentation properly next time, dummy.
