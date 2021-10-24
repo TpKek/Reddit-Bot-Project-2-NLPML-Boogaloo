@@ -1,5 +1,5 @@
 # Reddit Bot Project 2: Neural Network Boogaloo
-Reddit bot that uses sentiment analysis from NLTK.VADER 
+Reddit bot that uses sentiment analysis from the NLTK.VADER module to analise comments.
 
 *WIP_WIP_WIP_WIP_WIP_WIP*
 
