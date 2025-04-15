@@ -1,6 +1,7 @@
 #  Reddit-Bot-Project-2-Natural Language Processing Machine Learning-Boogaloo (Yes the title sucks)
 Reddit bot that uses sentiment analysis from the NLTK.VADER module to analise comments.
 
+Updated code as of 15/04/2025
 *WIP_WIP_WIP_WIP_WIP_WIP*
 
 Link to test subreddit:
